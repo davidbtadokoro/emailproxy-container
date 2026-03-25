@@ -1,0 +1,9 @@
+services:
+  server:
+    build: .
+    ports:
+      - "2587:2587"
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./emailproxy.config:/app/emailproxy.config
