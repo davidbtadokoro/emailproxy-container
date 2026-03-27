@@ -1,5 +1,6 @@
 services:
   server:
+    command: ["emailproxy", "--no-gui", "--external-auth", "--config-file", "/app/emailproxy.config"]
     build: .
     ports:
       - "2587:2587"
